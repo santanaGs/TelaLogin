@@ -1,0 +1,88 @@
+/*===============  Body ===============*/
+body {
+    margin: 0px;
+    animation: changeBg 5s infinite alternate linear;
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box {
+    width: 250px;
+    height: auto;
+    background: rgba(175, 175, 175, 0.815);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    gap: 0.4em;
+}
+
+
+@keyframes changeBg {
+    0% {
+        background-color: #EBECF1;
+    }
+
+    25% {
+        background-color: #d0d2e1;
+    }
+
+    50% {
+        background-color: #a9a9c5;
+    }
+
+    75% {
+        background-color: #908db8;
+    }
+
+    100% {
+        background-color: #5c5a79;
+    }
+}
+
+/*===============  Image ===============*/
+
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+/*===============  Tags ===============*/
+
+
+input {
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    transition: .8s;
+}
+
+button:hover {
+    color: #fff;
+    background-color: dodgerblue;
+    cursor: pointer;
+}
